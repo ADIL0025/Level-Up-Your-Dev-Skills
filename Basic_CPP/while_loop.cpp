@@ -7,7 +7,7 @@ int main (){
     // int i = 1;
     // while(i <= 5){
     //     cout << "Striver " << i << endl;
-    //     i = i+1;
+    //     i = i+1; 
     // }
 
     // Do while loop

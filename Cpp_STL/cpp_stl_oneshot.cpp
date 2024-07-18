@@ -2,7 +2,7 @@
 using namespace std;
 
 // explain Pairs
-void explainPair(){
+void explainPair(){ 
     pair<int , int> p = {1,2};
     cout << p.first << " " << p.second << endl;
 

@@ -7,7 +7,7 @@ int main() {
     // cin >> a;
 
     // if(a >=18){
-    //     cout << "You are a Adult" << endl;
+    //     cout << "You are a Adult" << endl; 
     // } else {
     //     cout << "You are not an adult" << endl;
     // }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// for number hashing
+// for number hashing 
 int main(){
     int n;
     cin >> n;

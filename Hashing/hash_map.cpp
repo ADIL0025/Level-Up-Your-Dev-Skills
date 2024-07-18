@@ -3,7 +3,7 @@ using namespace std;
 
 // using Mapping techniques >> it will be working fine with ordered mapping and also it will be working fine with unordered mapping
 
-int main(){
+int main(){ 
     int n;
     cin >> n;
     int arr[n];
