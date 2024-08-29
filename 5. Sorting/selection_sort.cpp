@@ -15,11 +15,6 @@ void selection_sort(int arr[], int n){
     }
 }
 
-
-
-
-
-
 int main(){
     int n;
     cin >> n;
