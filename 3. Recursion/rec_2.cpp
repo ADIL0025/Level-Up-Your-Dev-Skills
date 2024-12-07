@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Print name N times Recursion
+// ----------------------------->>>   Print name N times using Recursion
 /*void func(int i, int n){
    
    // Base Condition.
@@ -19,6 +19,19 @@ int main(){
   func(1,n);
   return 0;
 } */
+
+// ---------------------------------------->>> Print name N times using global variable
+void f(int i, int n){
+    if(i > n) return;
+    cout << "Adil" << endl;
+    f(i+1, n);
+}
+int main(){
+    int n;
+    cin >> n;
+    f(1,n);
+}
+
 
 // Print linearly from 1 to N
 /*void func(int i, int n){
@@ -68,16 +81,16 @@ int main(){
 }*/
 
 // Print linearly from N to 1 but by back tracking
-void func(int i, int n){
-    if(i > n){
-        return;
-    }
-    func(i+1,n);
-    cout<< i << endl;
-}
-int main(){
-    int n;
-    cin >> n;
-    func(1,n);
-    return 0;
-}
+// void func(int i, int n){
+//     if(i > n){
+//         return;
+//     }
+//     func(i+1,n);
+//     cout<< i << endl;
+// }
+// int main(){
+//     int n;
+//     cin >> n;
+//     func(1,n);
+//     return 0;
+// }

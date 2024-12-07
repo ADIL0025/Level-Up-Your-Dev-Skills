@@ -10,7 +10,7 @@ int main(){
     print();
 } */ 
 
-// Recursion with specfic conditions
+// Recursion with specific conditions
 
 int cnt = 0;
 void print(){
