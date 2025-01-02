@@ -21,16 +21,16 @@ int main(){
 } */
 
 // ---------------------------------------->>> Print name N times using global variable
-void f(int i, int n){
-    if(i > n) return;
-    cout << "Adil" << endl;
-    f(i+1, n);
-}
-int main(){
-    int n;
-    cin >> n;
-    f(1,n);
-}
+// void f(int i, int n){
+//     if(i > n) return;
+//     cout << "Adil" << endl;
+//     f(i+1, n);
+// }
+// int main(){
+//     int n;
+//     cin >> n;
+//     f(1,n);
+// }
 
 
 // Print linearly from 1 to N
@@ -50,7 +50,7 @@ int main(){
 }*/
 
 // Print linearly from N to 1
-/*void func(int i, int n){
+void func(int i, int n){
     if(i < 1){
         return;
     }
@@ -63,7 +63,7 @@ int main(){
     cin >> n;
     func(n,n);
     return 0;
-}*/
+
 
 // Print linearly from 1 to N but by back tracking
 /*void func(int i, int n){
