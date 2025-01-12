@@ -23,14 +23,29 @@ int main(){
 }*/
 
 // check palindrome or not
-bool f(int i, string s){
-    if(i >= s.size()/2) return true;
-    if(s[i] != s[s.size()-i-1]) return false;
-    return f(i+1, s);
+// bool f(int i, string s){
+//     if(i >= s.size()/2) return true;
+//     if(s[i] != s[s.size()-i-1]) return false;
+//     return f(i+1, s);
+// }
+
+// int main(){
+//     string s = "madam";
+//     cout << f(0,s);
+//     return 0;
+// }
+
+// Reverse a string using a single variable
+void reverse(string str){
+    if(str.size() == 0) return;
+    reverse(str.substr(1));
+    cout << str[0];
 }
 
 int main(){
-    string s = "madam";
-    cout << f(0,s);
+    cout << "Enter a string: ";
+    string s;
+    cin >> s;
+    reverse(s);
     return 0;
 }
