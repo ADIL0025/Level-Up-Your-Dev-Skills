@@ -65,16 +65,39 @@ using namespace std;
 // }
 
 // ---------------------------- Check if an Array is Sorted
-int isSorted(int n, vector<int> a) {
-    for(int i = 1; i < n; i++){
-        if(a[i] >= a[i-1]){
+// int isSorted(int n, vector<int> a) {
+//     for(int i = 1; i < n; i++){
+//         if(a[i] >= a[i-1]){
 
-        }
-        else{
-            return false;
-        }
-    }
-    return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     vector<int> arr(n);
+//     for (int i = 0; i < n; i++) {
+//         cin >> arr[i];
+//     }
+//     cout << isSorted(n, arr) << endl;
+// }
+
+
+// ----------------------------  Remove Duplicates from Sorted Array
+int removeDuplicates(vector<int> &arr, int n) {
+	int i = 0;
+	for(int j = 0; j < n; j++){
+		if(arr[j] != arr[i]){
+			arr[i+1] = arr[j];
+			i++;
+		}
+	}
+	return i+1;
 }
 
 int main(){
@@ -84,5 +107,5 @@ int main(){
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    cout << isSorted(n, arr) << endl;
+    cout << removeDuplicates(arr, n) << endl;
 }
