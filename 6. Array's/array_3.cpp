@@ -26,28 +26,48 @@ using namespace std;
 // }
 
 // ---------------------------- find the maximum consecutive 1's in an array
-int findMaxConsecutiveOnes(vector<int>& nums) {
-    int maxi = 0;
-    int cnt = 0;
+// int findMaxConsecutiveOnes(vector<int>& nums) {
+//     int maxi = 0;
+//     int cnt = 0;
 
-    for(int i = 0; i < nums.size(); i++){
-        if(nums[i] == 1){
-            cnt++;
-            maxi = max(maxi, cnt);
-        }
-        else{
-            cnt = 0;
-        }
-    }
-    return maxi;
+//     for(int i = 0; i < nums.size(); i++){
+//         if(nums[i] == 1){
+//             cnt++;
+//             maxi = max(maxi, cnt);
+//         }
+//         else{
+//             cnt = 0;
+//         }
+//     }
+//     return maxi;
+// }
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     vector<int> arr(n);
+//     for (int i = 0; i < n; i++) {
+//         cin >> arr[i];
+//     }
+//     cout << findMaxConsecutiveOnes(arr) << endl;
+// }
+
+// ---------------------------- find the number that appears only once and the other's twice
+int getSingleElement(vector<int> &arr){
+	
+	int xor1 = 0;
+	for(int i = 0; i < arr.size(); i++){
+		xor1 = xor1 ^ arr[i];
+	}
+	return xor1;
 }
 
 int main(){
     int n;
     cin >> n;
     vector<int> arr(n);
-    for (int i = 0; i < n; i++) {
+    for(int i = 0; i < n; i++){
         cin >> arr[i];
     }
-    cout << findMaxConsecutiveOnes(arr) << endl;
+    cout << getSingleElement(arr) << endl;
 }
