@@ -71,6 +71,3 @@ int main(){
     }
     cout << getSingleElement(arr) << endl;
 }
-
-
-
